@@ -1,0 +1,67 @@
+site_name: mysql
+repo_name: mkdocs_mysql
+repo_url: https://github.com/wumingsheng/mkdocs_mysql
+
+site_description: "An HTTP & HTTP/2 client for Android and Java applications"
+site_author: 'woms,wumingsheng.'
+remote_branch: gh-pages
+
+copyright: 'Copyright &copy; 2019 Square, Inc.'
+
+nav: 
+  - Home: index.md
+  - About: about.md
+# theme: mkdocs
+
+# pip install mkdocs-material
+theme:
+  language: 'en'
+  name: 'material'
+  favicon: images/icon-square.png
+  logo: images/icon-square.png
+  palette:
+    primary: 'teal'
+    accent: 'white'
+
+
+extra_css:
+  - 'css/app.css'
+
+
+
+
+
+# pip install pygments
+# pip install pymdown-extensions
+markdown_extensions:
+  - admonition
+  - smarty
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - tables
+
+
+extra:
+  social:
+    - type: 'gitbook'
+      link: 'https://www.wumingsheng.gitbook.io'
+    - type: 'baidu'
+      link: 'https://www.baidu.com'
+    - type: 'google'
+      link: 'https://www.google.com'
+
+
+
+
+
