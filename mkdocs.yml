@@ -1,17 +1,13 @@
-site_name: mysql
-repo_name: mkdocs_mysql
-repo_url: https://github.com/wumingsheng/mkdocs_mysql
+site_name: springboot
+repo_name: mkdocs_springboot
+repo_url: https://github.com/wumingsheng/mkdocs_springboot
 
-site_description: "An HTTP & HTTP/2 client for Android and Java applications"
-site_author: 'woms,wumingsheng.'
 remote_branch: gh-pages
 
 copyright: 'Copyright &copy; 2019 Square, Inc.'
 
 nav: 
   - Home: index.md
-  - About: about.md
-# theme: mkdocs
 
 # pip install mkdocs-material
 theme:
@@ -50,18 +46,5 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.superfences
   - tables
-
-
-extra:
-  social:
-    - type: 'gitbook'
-      link: 'https://www.wumingsheng.gitbook.io'
-    - type: 'baidu'
-      link: 'https://www.baidu.com'
-    - type: 'google'
-      link: 'https://www.google.com'
-
-
-
 
 
