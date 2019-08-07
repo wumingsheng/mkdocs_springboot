@@ -1,6 +1,6 @@
 # guava-retry重试机制
 
-```xml
+```xml tab="xml"
         <dependency>
             <groupId>com.github.rholder</groupId>
             <artifactId>guava-retrying</artifactId>
@@ -8,7 +8,7 @@
         </dependency>
 ```
 
-```java
+```java tab="Java"
 Retryer<Boolean> retryer = RetryerBuilder.<Boolean>newBuilder()
                 .retryIfResult(Predicates.equalTo(false))
                 .retryIfRuntimeException()
