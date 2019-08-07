@@ -294,14 +294,28 @@
                 
                 
                 <h1 id="guava-retry">guava-retry重试机制<a class="headerlink" href="#guava-retry" title="Permanent link">&para;</a></h1>
-<div class="codehilite"><pre><span></span>        <span class="nt">&lt;dependency&gt;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>        <span class="nt">&lt;dependency&gt;</span>
             <span class="nt">&lt;groupId&gt;</span>com.github.rholder<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>guava-retrying<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>2.0.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
 </pre></div>
+</td></tr></table>
 
-<div class="codehilite"><pre><span></span><span class="n">Retryer</span><span class="o">&lt;</span><span class="n">Boolean</span><span class="o">&gt;</span> <span class="n">retryer</span> <span class="o">=</span> <span class="n">RetryerBuilder</span><span class="o">.&lt;</span><span class="n">Boolean</span><span class="o">&gt;</span><span class="n">newBuilder</span><span class="o">()</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Retryer</span><span class="o">&lt;</span><span class="n">Boolean</span><span class="o">&gt;</span> <span class="n">retryer</span> <span class="o">=</span> <span class="n">RetryerBuilder</span><span class="o">.&lt;</span><span class="n">Boolean</span><span class="o">&gt;</span><span class="n">newBuilder</span><span class="o">()</span>
                 <span class="o">.</span><span class="na">retryIfResult</span><span class="o">(</span><span class="n">Predicates</span><span class="o">.</span><span class="na">equalTo</span><span class="o">(</span><span class="kc">false</span><span class="o">))</span>
                 <span class="o">.</span><span class="na">retryIfRuntimeException</span><span class="o">()</span>
                 <span class="o">.</span><span class="na">retryIfException</span><span class="o">()</span>
@@ -312,6 +326,22 @@
             <span class="k">return</span> <span class="n">sceneService</span><span class="o">.</span><span class="na">save</span><span class="o">(</span><span class="n">scene</span><span class="o">);</span>
         <span class="o">});</span>
 </pre></div>
+</td></tr></table>
+
+<p><mark>dddddd</mark></p>
+<p><mark class="critic">hellowoms</mark>hellowoms</p>
+<ins class="critic block">
+<ul>
+<li>nihao</li>
+<li>nihao</li>
+<li>nihao</li>
+<li>nihao</li>
+<li>nihao</li>
+<li>nihao</li>
+<li>nihao</li>
+<li>nihao</li>
+</ul>
+</ins>
                 
                   
                 
