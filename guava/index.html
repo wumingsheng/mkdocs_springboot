@@ -253,12 +253,44 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        guava
+      </label>
     
     <a href="./" title="guava" class="md-nav__link md-nav__link--active">
       guava
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guava-retry" title="guava-retry重试机制" class="md-nav__link">
+    guava-retry重试机制
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitter" title="字符串切割Splitter" class="md-nav__link">
+    字符串切割Splitter
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -277,8 +309,29 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guava-retry" title="guava-retry重试机制" class="md-nav__link">
+    guava-retry重试机制
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitter" title="字符串切割Splitter" class="md-nav__link">
+    字符串切割Splitter
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
   
 </nav>
                   </div>
@@ -293,11 +346,10 @@
                   <a href="https://github.com/wumingsheng/mkdocs_springboot/edit/master/docs/guava.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="guava-retry">guava-retry重试机制<a class="headerlink" href="#guava-retry" title="Permanent link">&para;</a></h1>
-<div class="superfences-tabs">
-<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
-<label for="__tab_1_0">xml</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+                  <h1>guava</h1>
+                
+                <h2 id="guava-retry">guava-retry重试机制<a class="headerlink" href="#guava-retry" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -307,10 +359,9 @@
             <span class="nt">&lt;version&gt;</span>2.0.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
 </pre></div>
-</td></tr></table></div>
-<input name="__tabs_1" type="radio" id="__tab_1_1" />
-<label for="__tab_1_1">Java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -330,22 +381,95 @@
             <span class="k">return</span> <span class="n">sceneService</span><span class="o">.</span><span class="na">save</span><span class="o">(</span><span class="n">scene</span><span class="o">);</span>
         <span class="o">});</span>
 </pre></div>
-</td></tr></table></div>
-</div>
-<p><mark>dddddd</mark></p>
-<p><mark class="critic">hellowoms</mark>hellowoms</p>
-<ins class="critic block">
+</td></tr></table>
+
+<h2 id="splitter">字符串切割Splitter<a class="headerlink" href="#splitter" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">bigbayAppIdList</span> <span class="o">=</span> <span class="n">Splitter</span><span class="o">.</span><span class="na">on</span><span class="o">(</span><span class="s">&quot;,&quot;</span><span class="o">)</span>
+  <span class="o">.</span><span class="na">omitEmptyStrings</span><span class="o">()</span>
+  <span class="o">.</span><span class="na">trimResults</span><span class="o">()</span>
+  <span class="o">.</span><span class="na">splitToList</span><span class="o">(</span><span class="s">&quot;123,fjdi, 88,99 , , 8 9 &quot;</span><span class="o">)</span>
+  <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">::</span><span class="n">println</span><span class="o">);</span>
+</pre></div>
+</td></tr></table>
+
+<div class="admonition info">
+<p class="admonition-title">运行结果</p>
 <ul>
-<li>nihao</li>
-<li>nihao</li>
-<li>nihao</li>
-<li>nihao</li>
-<li>nihao</li>
-<li>nihao</li>
-<li>nihao</li>
-<li>nihao</li>
+<li>123</li>
+<li>fjdi</li>
+<li>88</li>
+<li>99</li>
+<li>8 9</li>
 </ul>
-</ins>
+</div>
+<p><mark>拆分器工厂</mark></p>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>描述</strong></th>
+<th><strong>范例</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Splitter.on(char)</td>
+<td>按单个字符拆分</td>
+<td>Splitter.on(‘;’)</td>
+</tr>
+<tr>
+<td>Splitter.on(CharMatcher)</td>
+<td>按字符匹配器拆分</td>
+<td>Splitter.on(CharMatcher.BREAKING_WHITESPACE)</td>
+</tr>
+<tr>
+<td>Splitter.on(String)</td>
+<td>按字符串拆分</td>
+<td>Splitter.on(“, “)</td>
+</tr>
+<tr>
+<td>Splitter.on(Pattern)  Splitter.onPattern(String)</td>
+<td>按正则表达式拆分</td>
+<td>Splitter.onPattern(“\r?\n”)</td>
+</tr>
+<tr>
+<td>Splitter.fixedLength(int)</td>
+<td>按固定长度拆分；最后一段可能比给定长度短，但不会为空。</td>
+<td>Splitter.fixedLength(3)</td>
+</tr>
+</tbody>
+</table>
+<p><mark>拆分器修饰符</mark></p>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ins class="critic"> omitEmptyStrings() </ins></td>
+<td>从结果中自动忽略空字符串</td>
+</tr>
+<tr>
+<td><ins class="critic">trimResults()  </ins></td>
+<td>移除结果字符串的前导空白和尾部空白</td>
+</tr>
+<tr>
+<td><ins class="critic">trimResults(CharMatcher) </ins></td>
+<td>给定匹配器，移除结果字符串的前导匹配字符和尾部匹配字符</td>
+</tr>
+<tr>
+<td><ins class="critic"> limit(int) </ins></td>
+<td>限制拆分出的字符串数量</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
