@@ -36,6 +36,7 @@ markdown_extensions:
   - smarty
   - codehilite:
       guess_lang: false
+      linenums: true
   - footnotes
   - meta
   - toc:
@@ -47,6 +48,8 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.smartsymbols
   - pymdownx.superfences
+  - pymdownx.critic
   - tables
+  - pymdownx.mark
 
 
