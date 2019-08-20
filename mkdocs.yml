@@ -12,6 +12,7 @@ nav:
   - guava: guava.md
   - pipeline: autowired-2-list.md
   - springboot获取profile: springboot-profile.md
+  - 自定义starter: self-define-starter.md
 
 # pip install mkdocs-material
 theme:
