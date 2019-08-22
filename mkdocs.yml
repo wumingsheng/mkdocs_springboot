@@ -13,6 +13,7 @@ nav:
   - pipeline: autowired-2-list.md
   - springboot获取profile: springboot-profile.md
   - 自定义starter: self-define-starter.md
+  - session共享: springboot-session.md
 
 # pip install mkdocs-material
 theme:
@@ -54,5 +55,7 @@ markdown_extensions:
   - pymdownx.critic
   - tables
   - pymdownx.mark
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
 
 
