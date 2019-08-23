@@ -36,7 +36,7 @@
     
     
       
-        <title>guava - springboot</title>
+        <title>读取配置文件 - springboot</title>
       
     
     
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#guava-retry" tabindex="1" class="md-skip">
+      <a href="#spring" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -113,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                guava
+                读取配置文件
               
             </span>
           
@@ -246,52 +246,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        guava
-      </label>
-    
-    <a href="./" title="guava" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../guava/" title="guava" class="md-nav__link">
       guava
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#guava-retry" title="guava-retry重试机制" class="md-nav__link">
-    guava-retry重试机制
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#splitter" title="字符串切割Splitter" class="md-nav__link">
-    字符串切割Splitter
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -347,11 +306,97 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../read-properties/" title="读取配置文件" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        读取配置文件
+      </label>
+    
+    <a href="./" title="读取配置文件" class="md-nav__link md-nav__link--active">
       读取配置文件
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" title="1. 概述" class="md-nav__link">
+    1. 概述
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-resource" title="2. 通过Resource接口" class="md-nav__link">
+    2. 通过Resource接口
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-resource" title="2.1 使用Resource的实现类" class="md-nav__link">
+    2.1 使用Resource的实现类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-resourceloader" title="2.2 使用ResourceLoader" class="md-nav__link">
+    2.2 使用ResourceLoader
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-value" title="2.3 使用@Value注解" class="md-nav__link">
+    2.3 使用@Value注解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-spel" title="2.4 使用SpEL直接解析" class="md-nav__link">
+    2.4 使用SpEL直接解析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" title="3. 总结" class="md-nav__link">
+    3. 总结
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -369,20 +414,63 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#guava-retry" title="guava-retry重试机制" class="md-nav__link">
-    guava-retry重试机制
+  <a href="#1" title="1. 概述" class="md-nav__link">
+    1. 概述
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#splitter" title="字符串切割Splitter" class="md-nav__link">
-    字符串切割Splitter
+  <a href="#2-resource" title="2. 通过Resource接口" class="md-nav__link">
+    2. 通过Resource接口
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-resource" title="2.1 使用Resource的实现类" class="md-nav__link">
+    2.1 使用Resource的实现类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-resourceloader" title="2.2 使用ResourceLoader" class="md-nav__link">
+    2.2 使用ResourceLoader
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-value" title="2.3 使用@Value注解" class="md-nav__link">
+    2.3 使用@Value注解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-spel" title="2.4 使用SpEL直接解析" class="md-nav__link">
+    2.4 使用SpEL直接解析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" title="3. 总结" class="md-nav__link">
+    3. 总结
   </a>
   
 </li>
@@ -403,133 +491,44 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/wumingsheng/mkdocs_springboot/edit/master/docs/guava.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/wumingsheng/mkdocs_springboot/edit/master/docs/read-properties.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>guava</h1>
-                
-                <h2 id="guava-retry">guava-retry重试机制<a class="headerlink" href="#guava-retry" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>        <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>com.github.rholder<span class="nt">&lt;/groupId&gt;</span>
-            <span class="nt">&lt;artifactId&gt;</span>guava-retrying<span class="nt">&lt;/artifactId&gt;</span>
-            <span class="nt">&lt;version&gt;</span>2.0.0<span class="nt">&lt;/version&gt;</span>
-        <span class="nt">&lt;/dependency&gt;</span>
-</pre></div>
-</td></tr></table>
-
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Retryer</span><span class="o">&lt;</span><span class="n">Boolean</span><span class="o">&gt;</span> <span class="n">retryer</span> <span class="o">=</span> <span class="n">RetryerBuilder</span><span class="o">.&lt;</span><span class="n">Boolean</span><span class="o">&gt;</span><span class="n">newBuilder</span><span class="o">()</span>
-                <span class="o">.</span><span class="na">retryIfResult</span><span class="o">(</span><span class="n">Predicates</span><span class="o">.</span><span class="na">equalTo</span><span class="o">(</span><span class="kc">false</span><span class="o">))</span>
-                <span class="o">.</span><span class="na">retryIfRuntimeException</span><span class="o">()</span>
-                <span class="o">.</span><span class="na">retryIfException</span><span class="o">()</span>
-                <span class="o">.</span><span class="na">withStopStrategy</span><span class="o">(</span><span class="n">StopStrategies</span><span class="o">.</span><span class="na">neverStop</span><span class="o">())</span>
-                <span class="o">.</span><span class="na">build</span><span class="o">();</span>
-        <span class="n">retryer</span><span class="o">.</span><span class="na">call</span><span class="o">(()-&gt;{</span>
-            <span class="n">scene</span><span class="o">.</span><span class="na">setSceneKey</span><span class="o">(</span><span class="n">IDUtil</span><span class="o">.</span><span class="na">verifyCode</span><span class="o">());</span>
-            <span class="k">return</span> <span class="n">sceneService</span><span class="o">.</span><span class="na">save</span><span class="o">(</span><span class="n">scene</span><span class="o">);</span>
-        <span class="o">});</span>
-</pre></div>
-</td></tr></table>
-
-<h2 id="splitter">字符串切割Splitter<a class="headerlink" href="#splitter" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">bigbayAppIdList</span> <span class="o">=</span> <span class="n">Splitter</span><span class="o">.</span><span class="na">on</span><span class="o">(</span><span class="s">&quot;,&quot;</span><span class="o">)</span>
-  <span class="o">.</span><span class="na">omitEmptyStrings</span><span class="o">()</span>
-  <span class="o">.</span><span class="na">trimResults</span><span class="o">()</span>
-  <span class="o">.</span><span class="na">splitToList</span><span class="o">(</span><span class="s">&quot;123,fjdi, 88,99 , , 8 9 &quot;</span><span class="o">)</span>
-  <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">::</span><span class="n">println</span><span class="o">);</span>
-</pre></div>
-</td></tr></table>
-
-<div class="admonition info">
-<p class="admonition-title">运行结果</p>
-<ul>
-<li>123</li>
-<li>fjdi</li>
-<li>88</li>
-<li>99</li>
-<li>8 9</li>
-</ul>
-</div>
-<p><mark>拆分器工厂</mark></p>
-<table>
-<thead>
-<tr>
-<th><strong>方法</strong></th>
-<th><strong>描述</strong></th>
-<th><strong>范例</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Splitter.on(char)</td>
-<td>按单个字符拆分</td>
-<td>Splitter.on(‘;’)</td>
-</tr>
-<tr>
-<td>Splitter.on(CharMatcher)</td>
-<td>按字符匹配器拆分</td>
-<td>Splitter.on(CharMatcher.BREAKING_WHITESPACE)</td>
-</tr>
-<tr>
-<td>Splitter.on(String)</td>
-<td>按字符串拆分</td>
-<td>Splitter.on(“, “)</td>
-</tr>
-<tr>
-<td>Splitter.on(Pattern)  Splitter.onPattern(String)</td>
-<td>按正则表达式拆分</td>
-<td>Splitter.onPattern(“\r?\n”)</td>
-</tr>
-<tr>
-<td>Splitter.fixedLength(int)</td>
-<td>按固定长度拆分；最后一段可能比给定长度短，但不会为空。</td>
-<td>Splitter.fixedLength(3)</td>
-</tr>
-</tbody>
-</table>
-<p><mark>拆分器修饰符</mark></p>
-<table>
-<thead>
-<tr>
-<th><strong>方法</strong></th>
-<th><strong>描述</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><ins class="critic"> omitEmptyStrings() </ins></td>
-<td>从结果中自动忽略空字符串</td>
-</tr>
-<tr>
-<td><ins class="critic">trimResults()  </ins></td>
-<td>移除结果字符串的前导空白和尾部空白</td>
-</tr>
-<tr>
-<td><ins class="critic">trimResults(CharMatcher) </ins></td>
-<td>给定匹配器，移除结果字符串的前导匹配字符和尾部匹配字符</td>
-</tr>
-<tr>
-<td><ins class="critic"> limit(int) </ins></td>
-<td>限制拆分出的字符串数量</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="spring">老司机教你通过Spring来读取文件的各种姿势<a class="headerlink" href="#spring" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 概述<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>在日常业务开发中我们经常有可能读取一些自定义配置或者文件。比如说公私钥文件、一些固定的词典文件之类的，这一类统称为资源（Resource）。很多情况下都是自己写IO来读取。今天开始你可以不用再自己造轮子了。因为Spring自带有资源加载功能，甚至还有非常便利的方法将读取的内容注入Spring bean。接下来我们就来见识一下吧。</p>
+<h2 id="2-resource">2. 通过Resource接口<a class="headerlink" href="#2-resource" title="Permanent link">&para;</a></h2>
+<p>我们可以使用org.springframework.core.io.Resource接口简化资源文件的定位。Spring帮助我们使用资源加载器查找和读取资源，资源加载器根据提供的路径决定选择哪个Resource实现。</p>
+<h3 id="21-resource">2.1 使用Resource的实现类<a class="headerlink" href="#21-resource" title="Permanent link">&para;</a></h3>
+<p>org.springframework.core.io.Resource接口常用的有两个实现类：</p>
+<ol>
+<li>org.springframework.core.io.ClassPathResource 用来加载classpath下的资源，我们直接读取springboot 配置文件 application.properties,其中已经写入了一个配置 server.port=8080</li>
+</ol>
+<p><img alt="" src="../images/4.png" /></p>
+<ol>
+<li>org.springframework.core.io.FileSystemResource  用来加载系统文件，通常通过文件的绝对或者相对路径来读取。上面的例子我们用这个来试一试。不同的是这次我们需要文件的路径。 </li>
+</ol>
+<p><img alt="" src="../images/5.png" /></p>
+<h3 id="22-resourceloader">2.2 使用ResourceLoader<a class="headerlink" href="#22-resourceloader" title="Permanent link">&para;</a></h3>
+<p>如果你业务中需要使用延迟加载，我们可以使用类ResourceLoader：</p>
+<p><img alt="" src="../images/6.png" /></p>
+<p>我们也可以使用@Autowired将ResourceLoader注入我们的bean ：</p>
+<p><img alt="" src="../images/7.png" /></p>
+<p>根据上图ApplicationContext 继承了ResourceLoader 接口。因此我们可以通过Spring bean 注入的方式来读取资源。</p>
+<p><img alt="" src="../images/8.png" /></p>
+<p>这种使用方式看上去更Spring，接着往下看，还有更Spring的骚操作。</p>
+<h3 id="23-value">2.3 使用@Value注解<a class="headerlink" href="#23-value" title="Permanent link">&para;</a></h3>
+<p>我们直接使用@Value注解将资源直接注入Spring bean。还有这种操作！不行了！我已经迫不及待的要写几行试试了：</p>
+<p><img alt="" src="../images/9.png" /></p>
+<p>完美无暇！断言全部正确！不知道能不能读取图片。我想也是可以的，这个留给你自己发掘。但是就这么结束了吗？玩一个刺激点的。为什么不直接解析出来并注入对象呢？SpEL(Spring Expression Language)可以做到这一点。让我们来见识一下吧。</p>
+<h3 id="24-spel">2.4 使用SpEL直接解析<a class="headerlink" href="#24-spel" title="Permanent link">&para;</a></h3>
+<p>为了展现灵活性，这里我们定义自己的解析类。我们定义了一个读取配置文件的工具类  cn.felord.mapstruct.util.ResourceReader</p>
+<p><img alt="" src="../images/10.png" /></p>
+<p>两个方法都是一样的效果，但是要展现的是不同途径。下面的代码必须让它的出场与众不同：</p>
+<p><img alt="" src="../images/11.png" /></p>
+<p>被注释掉的代码同样管用，你很容易观察到它们之间的差别。</p>
+<h2 id="3">3. 总结<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>经过上面的讲解，我们了解了Spring去处理资源文件的各种姿势。甚至还有直接获取并装配资源的方法。相信看了本文之后你会立即抛掉以前的老套做法。赶紧给码农小胖哥点个赞吧。</p>
                 
                   
                 
@@ -550,7 +549,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../okhttp/" title="okhttp" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../springboot-session/" title="session共享" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -559,25 +558,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                okhttp
+                session共享
               </span>
             </div>
           </a>
         
-        
-          <a href="../autowired-2-list/" title="pipeline" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                pipeline
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
