@@ -14,6 +14,7 @@ nav:
   - springboot获取profile: springboot-profile.md
   - 自定义starter: self-define-starter.md
   - session共享: springboot-session.md
+  - 读取配置文件: read-properties.md
 
 # pip install mkdocs-material
 theme:
