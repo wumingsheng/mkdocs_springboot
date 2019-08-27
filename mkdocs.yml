@@ -15,6 +15,7 @@ nav:
   - 自定义starter: self-define-starter.md
   - session共享: springboot-session.md
   - 读取配置文件: read-properties.md
+  - 优雅的进行重试: retry.md
 
 # pip install mkdocs-material
 theme:
